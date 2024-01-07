@@ -60,11 +60,8 @@ img {
 
 .side-menu {
   display: grid;
-}
-
-.side-menu-title {
-  align-self: center;
-  justify-self: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .navigation {

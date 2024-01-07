@@ -59,12 +59,14 @@ img {
   height: 100%;
 }
 
-.navigation {
+.side-menu {
   width: 20%;
-  background-color: #ffb40a;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.navigation {
+  background-color: #ffb40a;
   border-radius: 0 1.75rem 1.75rem 0;
 }
 
@@ -81,11 +83,7 @@ img {
 }
 
 .links {
-  width: 20%;
   background-color: #ffd36f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 1.75rem 0 0 1.75rem;
 }
 
