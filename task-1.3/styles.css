@@ -94,9 +94,6 @@ button {
   margin-bottom: 1rem;
   font-weight: 700;
 }
-.form-item-label > .income-display {
-  display: none;
-}
 
 .form-item-input {
   display: block;
@@ -154,6 +151,7 @@ button {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
   grid-template-columns: auto min-content;
+  position: relative;
 }
 
 input[type=range].form-item-range {
@@ -373,17 +371,11 @@ input[type=range].form-item-range::-moz-range-track {
   }
   .range-container {
     grid-template-columns: 100%;
-    grid-template-rows: max-content min-content;
+    grid-template-rows: max-content;
   }
   .range-container .income-display {
-    display: none;
-  }
-  .form-item-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .form-item-label > .income-display {
-    display: block;
+    position: absolute;
+    right: 0;
+    top: -52px;
   }
 }/*# sourceMappingURL=styles.css.map */

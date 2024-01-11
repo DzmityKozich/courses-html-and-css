@@ -109,10 +109,6 @@ button {
   padding-left: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
-
-  & > .income-display {
-    display: none;
-  }
 }
 
 .form-item-input {
@@ -167,6 +163,7 @@ button {
   display: grid;
   column-gap: 1.25rem;
   grid-template-columns: auto min-content;
+  position: relative;
 }
 
 input[type="range"].form-item-range {
@@ -350,6 +347,7 @@ input[type="range"].form-item-range {
   }
 }
 
+// Media
 @media (max-width: 1200px) {
   .logo {
     max-width: 300px;
@@ -408,29 +406,12 @@ input[type="range"].form-item-range {
 
   .range-container {
     grid-template-columns: 100%;
-    grid-template-rows: max-content min-content;
+    grid-template-rows: max-content;
 
     & .income-display {
-      display: none;
-    }
-
-    // & .income-display {
-    //   justify-self: end;
-    //   grid-row: 1;
-    // }
-
-    // & input.form-item-range {
-    //   grid-row: 2;
-    // }
-  }
-
-  .form-item-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    & > .income-display {
-      display: block;
+      position: absolute;
+      right: 0;
+      top: -52px;
     }
   }
 }
