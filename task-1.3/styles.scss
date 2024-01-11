@@ -47,12 +47,11 @@ button {
 }
 
 // Common
-// TODO: rename styles!
-.mb-4 {
+.mb-9 {
   margin-bottom: 2.25rem !important;
 }
 
-.pl-2 {
+.pl-4 {
   padding-left: 2rem;
 }
 
@@ -110,6 +109,10 @@ button {
   padding-left: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
+
+  & > .income-display {
+    display: none;
+  }
 }
 
 .form-item-input {
@@ -270,7 +273,7 @@ input[type="range"].form-item-range {
 .form-check-group {
   width: 100%;
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .form-check-item {
@@ -344,5 +347,90 @@ input[type="range"].form-item-range {
     content: "";
     position: absolute;
     display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    max-width: 300px;
+    padding-top: 20px;
+  }
+
+  .form-check-group {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .logo {
+    max-width: 250px;
+    padding-top: 40px;
+  }
+
+  .accout-form {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .grid-column-2 {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-row: auto;
+
+    & .space {
+      display: none;
+    }
+
+    & .title {
+      height: auto;
+      line-height: 53px;
+    }
+
+    .logo {
+      padding-top: 0;
+      padding-right: 20px;
+      margin-top: -40px;
+      justify-self: end;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .container {
+    padding: 1rem 1.5rem;
+  }
+
+  .range-container {
+    grid-template-columns: 100%;
+    grid-template-rows: max-content min-content;
+
+    & .income-display {
+      display: none;
+    }
+
+    // & .income-display {
+    //   justify-self: end;
+    //   grid-row: 1;
+    // }
+
+    // & input.form-item-range {
+    //   grid-row: 2;
+    // }
+  }
+
+  .form-item-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > .income-display {
+      display: block;
+    }
   }
 }
