@@ -250,6 +250,10 @@ input[type="range"].form-item-range {
   font-family: Arial;
   padding: 1rem 2rem;
   resize: vertical;
+
+  &::placeholder {
+    color: $gray;
+  }
 }
 
 .form-actions {

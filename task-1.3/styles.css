@@ -237,6 +237,12 @@ input[type=range].form-item-range::-moz-range-track {
   padding: 1rem 2rem;
   resize: vertical;
 }
+.form-item-textarea::-moz-placeholder {
+  color: #b8b6bf;
+}
+.form-item-textarea::placeholder {
+  color: #b8b6bf;
+}
 
 .form-actions {
   padding: 1rem 0;
