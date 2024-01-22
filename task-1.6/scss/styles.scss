@@ -138,17 +138,17 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    overflow-y: unset;
 
     & > input[type="checkbox"] {
       appearance: none;
       opacity: 0;
       width: 100%;
+      height: 2rem;
       cursor: pointer;
-      z-index: 100;
       position: absolute;
       top: 0;
       left: 0;
-      height: 2rem;
     }
 
     & > input[type="checkbox"]:checked ~ .navbar-menu {
@@ -184,6 +184,7 @@ img {
     background-color: $default-red;
     width: 100%;
     top: 2rem;
+    left: 0;
     height: 0;
     overflow: hidden;
     transition: height 0.2s ease;
@@ -201,3 +202,6 @@ img {
     padding: 1rem;
   }
 }
+
+// @media (max-width: 690px) {
+// }
