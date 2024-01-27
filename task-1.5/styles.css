@@ -1,0 +1,99 @@
+/* Default */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 24px;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+  font-family: Roboto;
+  letter-spacing: 0.02em;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Main */
+.time {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+
+.time-title {
+  color: #ffffff4d;
+  font-weight: 900;
+  font-size: 10rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.time-fox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.summer {
+  background-color: #f19f00;
+}
+
+.fox-summer {
+  background-image: url(./icons/summer/summer-fox.png);
+  background-size: 350px 320px;
+}
+
+.spring {
+  background-color: #00cc39;
+}
+
+.fox-spring {
+  background-image: url(./icons/spring/spring-fox.png);
+  background-size: 500px 335px;
+}
+
+.autumn {
+  background-color: #d64200;
+}
+
+.fox-autumn {
+  background-image: url(./icons/autumn/autumn-fox.png);
+  background-size: 400px 435px;
+}
+
+.winter {
+  background-color: #0057ff;
+}
+
+.fox-winter {
+  background-image: url(./icons/winter/winter-fox.png);
+  background-size: 400px 371px;
+}
