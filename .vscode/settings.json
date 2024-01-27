@@ -3,7 +3,8 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/task-1.6/css"
+      "savePath": "/task-1.8/css"
     }
-  ]
+  ],
+  "liveSassCompile.settings.forceBaseDirectory": "/task-1.8"
 }
